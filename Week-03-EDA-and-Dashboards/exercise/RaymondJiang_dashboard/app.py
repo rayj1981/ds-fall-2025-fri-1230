@@ -2,12 +2,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import streamlit as st
-import plotly.express as px
+
 
 # Load the CSV
-df = pd.read_csv('/workspaces/ds-fall-2025-fri-1230/Week-03-EDA-and-Dashboards/data/movie_ratings.csv')
+df = pd.read_csv('Week-03-EDA-and-Dashboards/data/movie_ratings.csv')
 df.info()
-# Clean the data
 df = df.dropna()
 df = df.drop_duplicates()
 
